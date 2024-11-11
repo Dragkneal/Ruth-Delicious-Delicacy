@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', serif;
+}
+
+:root{
+    /* COLORS */
+    --whiteColor: #fff;
+    --darkColor: #252525;
+    --primaryColor: #3b141c;
+    --secondaryColor: #f3961c;
+    --lightPinkColor: #faf4f5;
+    --mediumGrayColor: #ccc;
+    
+    /* FONTSIZE */
+    --fontS: 0.9rem;
+    --fontN: 1rem;
+    --fontM: 1.12rem;
+    --fontL: 1.5rem;
+    --fontXL: 2rem;
+    --fontXXL: 2.3rem;
+
+    /* FONTWEGHT */
+    --fontWeightN: 400;
+    --fontWeightM: 500;
+    --fontWeightSB: 600;
+    --fontWeightB: 700;
+
+    /* BORDERRADIUS */
+    --borderRadiusS: 8px;
+    --borderRadiusM: 30px;
+    --borderRadiusCircle: 50%;
+
+    /* SITE MAX WIDTH */
+    --siteMaxWidth: 1200px;
+}
+
+/* UTILITIES */
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/* NAVIGATIONS */
+.navigation{
+    background: var(--primaryColor);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--siteMaxWidth);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.navbar .navLogo{
+    color: var(--secondaryColor);
+    font-size: var(--fontm);
+    font-weight: var(--fontWeightB);
+}
+
+.navbar .navList{
+    display: flex;
+}
+
+.navbar .navList .listItems{
+    margin-left: 40px;
+}
+
+.navbar .navList .navLinks{
+    color: var(--whiteColor);
+    font-size: var(--fontM);
+    padding: 7px 16px;
+    border-radius: var(--borderRadiusM);
+}
+
+.navbar .navList .navLinks:hover{
+    color: var(--primaryColor);
+    background: var(--secondaryColor);
+}
+
+/* HERO SECTION */
+.heroSection{
+    background: var(--primaryColor);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heroSection .heroContent{
+    color: var(--whiteColor);
+    margin-left: 100px;
+}
+
+.heroSection .heroContent .heroHeading{
+    font-family: "Edu AU VIC WA NT Pre", serif;;
+    color: var(--secondaryColor);
+    font-size: var(--fontXL);
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: var(--fontWeightB);
+}
+
+.heroSection .heroContent .heroSubheading{
+    font-size: var(--fontL);
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: var(--fontWeightSB);
+}
+
+.heroSection .heroContent .btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.heroSection .heroContent .btnContainer .btnContact,
+.heroSection .heroContent .btnContainer .btnOrder:hover{
+    padding: 7px 16px;
+    border-radius: var(--borderRadiusM);
+    background: transparent;
+    border: 2px solid var(--whiteColor);
+    color: var(--whiteColor);
+}
+
+.heroSection .heroContent .btnContainer .btnOrder,
+.heroSection .heroContent .btnContainer .btnContact:hover{
+    padding: 7px 16px;
+    border-radius: var(--borderRadiusM);
+    background: var(--secondaryColor);
+    border: 2px solid transparent;
+    color: var(--whiteColor);
+}
+
+.heroImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.heroImage img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/* ABOUT SECTION */
+.aboutSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: var(--lightPinkColor);
+    min-height: 80vh;
+}
+
+.aboutSection .aboutImage{
+    margin-left: 100px;
+}
+
+.aboutSection .aboutImage img{
+    width: 350px;
+    height: 350px;
+    border-radius: var(--borderRadiusCircle);
+}
+
+.aboutSection .aboutContent{
+    margin-right: 100px;
+}
+
+.aboutSection .aboutContent .sectionHeading{
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: var(--fontXL);
+    margin-bottom: 10px;
+}
+
+.aboutSection .aboutContent .text{
+    font-size: var(--fontM);
+}
+
+/* FOOTER */
+.footer{
+    background: var(--darkColor);
+}
+
+.footer .footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer .footerContainer p{
+    color: var(--whiteColor);
+}
+
+.footer .footerContainer .socialLinks a{
+    color: var(--whiteColor);
+    margin: 0 10px;
+    font-size: var(--fontM);
+    transition: all 0.5s;
+}
+
+.footer .footerContainer .socialLinks a:hover{
+    color: var(--secondaryColor);
+}
+
+.footer .footerContainer .divider{
+    margin: 0 10px;
+    color: var(--whiteColor);
+}
+
+.footer .footerContainer p a{
+    color: var(--whiteColor);
+    transition: all 0.5s;
+}
+
+.footer .footerContainer p a:hover{
+    color: var(--secondaryColor);
+}
+
+/* RESPONSIVE DESIGNS */
+
+@media screen and (max-width: 1300px) {
+    .navbar{
+        margin: 0 5%;
+    }    
+}
+
+@media  screen and (max-width: 900px) {
+    :root{
+        --fontM:1rem;
+        --fontL: 1.3rem;
+        --fontXL: 1.5rem;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .navbar .navList{
+        flex-direction: column;
+        gap: 70px;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        left: -9999px;
+        top: 0;
+        width: 350px;
+        height: 100vh;
+        background: var(--whiteColor);
+        transition: all ease 0.3s;
+    }
+
+    .navbar .navList .navLinks{
+        color: #000;
+        font-size: var(--fontL);
+    }
+
+    .navbar .navList #closeNavMenu{
+        position: absolute;
+        top: 40px;
+        left: 250px;
+        font-size: var(--fontXL);
+    }
+
+    .navbar #openNavMenu{
+        color: var(--whiteColor);
+        font-size: var(--fontXXL);
+        margin-right: 30px;
+    }
+
+    .heroSection{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroSection .heroContent,
+    .heroSection .heroImage,
+    .aboutSection .aboutContent,
+    .aboutSection .aboutImage{
+        max-width: 550px;
+        margin: 0 5%;
+    }
+
+    .aboutSection{
+        flex-direction: column-reverse;
+        padding: 70px 0;
+    }
+
+    .footer .footerContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
