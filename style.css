@@ -12,6 +12,7 @@
     --whiteColor: #fff;
     --darkColor: #252525;
     --primaryColor: #3b141c;
+    --primaryColor20: #3b141c67;
     --secondaryColor: #f3961c;
     --lightPinkColor: #faf4f5;
     --mediumGrayColor: #ccc;
@@ -56,6 +57,16 @@ ul{
 button{
     background: transparent;
     border: none;
+}
+
+.btn{
+    padding: 7px 16px;
+    border-radius: var(--borderRadiusM);
+    background: var(--secondaryColor);
+    border: 2px solid transparent;
+    color: var(--whiteColor);
+    font-size: var(--fontN);
+    margin: 20px 50px;
 }
 
 .hidden{
@@ -112,6 +123,7 @@ button{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 20px 0;
 }
 
 .heroSection .heroContent{
@@ -133,6 +145,10 @@ button{
     text-align: center;
     margin-bottom: 10px;
     font-weight: var(--fontWeightSB);
+}
+
+.heroSection .heroContent .content{
+    font-size: var(--fontM);
 }
 
 .heroSection .heroContent .btnContainer{
@@ -208,6 +224,77 @@ button{
 
 .aboutSection .aboutContent .text{
     font-size: var(--fontM);
+}
+
+/* CONTACT SECTION */
+.contactSection{
+    min-height: 100vh;
+    padding: 20px 0;
+    background: var(--mediumGrayColor);
+    
+}
+
+.contactSection h2{
+    text-align: center;
+    font-size: var(--fontXL);
+}
+
+.contactSection .contactContent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactSection .contactInfo{
+    margin-left: 100px;
+}
+
+.contactSection .contactInfo .contactInfoItem{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    font-size: var(--fontL);
+    color: var(--primaryColor);
+    font-weight: var(--fontWeightB);
+}
+
+.contactSection .contactInfo .contactInfoItem i{
+    color: var(--secondaryColor);
+}
+
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    margin-left: 30px;
+}
+
+.contactForm input{
+    width: 400px;
+    height: 40px;
+    border-radius: var(--borderRadiusS);
+    border: none;
+    background: var(--primaryColor20);
+    padding: 20px;
+    color: var(--secondaryColor);
+    font-size: var(--fontM);
+}
+
+.contactForm textarea{
+    min-height: 100px;
+    border-radius: var(--borderRadiusS);
+    border: none;
+    background: var(--primaryColor20);
+    padding: 5px 10px;
+    color: var(--secondaryColor);
+}
+
+.contactForm::placeholder{
+    color: var(--secondaryColor);
 }
 
 /* FOOTER */
@@ -308,6 +395,18 @@ button{
         justify-content: center;
     }
 
+    .heroSection .heroContent .heroHeading{
+        font-size: var(--fontXXL);
+    }
+
+    .heroSection .heroContent .heroSubheading{
+        font-size: var(--fontXL);
+    }
+
+    .heroSection .heroContent .content{
+        font-size: var(--fontL);
+    }
+
     .heroSection .heroContent,
     .heroSection .heroImage,
     .aboutSection .aboutContent,
@@ -321,9 +420,21 @@ button{
         padding: 70px 0;
     }
 
+    .aboutSection .aboutContent .sectionHeading{
+        font-size: var(--fontXXL);
+    }
+
+    .aboutSection .aboutContent .text{
+        font-size: var(--fontL);
+    }
+
     .footer .footerContainer{
         flex-direction: column;
         gap: 20px;
+    }
+
+    .footer .footerContainer .socialLinks a{
+        font-size: var(--fontL);
     }
 
 }
