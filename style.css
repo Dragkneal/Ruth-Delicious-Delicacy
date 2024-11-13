@@ -248,7 +248,7 @@ button{
 }
 
 .contactSection .contactInfo{
-    margin-left: 100px;
+    margin-left: 0px;
 }
 
 .contactSection .contactInfo .contactInfoItem{
@@ -434,6 +434,9 @@ button{
         margin-left: 0px;
     }
 
+    .contactSection .contactInfoItem{
+        font-size: var(--fontM);
+    }
 
     .contactSection .contactContent{
         flex-direction: column;
@@ -444,6 +447,10 @@ button{
     .contactSection .contactForm form{
         margin-bottom: 20px;
         margin-right: 0px;
+    }
+
+    .contactSection .contactForm input{
+        width: 350px;
     }
 
     .footer .footerContainer{
