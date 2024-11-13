@@ -268,9 +268,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-right: 100px;
     margin-bottom: 120px;
-    margin-left: 30px;
 }
 
 .contactForm input{
@@ -426,6 +424,22 @@ button{
 
     .aboutSection .aboutContent .text{
         font-size: var(--fontL);
+    }
+
+    .contactSection h2{
+        font-size: var(--fontXXL);
+    }
+
+
+    .contactSection .contactContent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactSection .contactForm form{
+        margin-bottom: 20px;
+        margin-right: 0px;
     }
 
     .footer .footerContainer{
