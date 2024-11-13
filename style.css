@@ -430,6 +430,10 @@ button{
         font-size: var(--fontXXL);
     }
 
+    .contactSection .contactInfo{
+        margin-left: 0px;
+    }
+
 
     .contactSection .contactContent{
         flex-direction: column;
